@@ -1,0 +1,79 @@
+.quote {
+    background-color: $gray-color;
+    &--no-property {
+        background-color: $white-color;
+        & .quote__item {
+            padding-top: 104px;
+            padding-bottom: 104px;
+        }
+    }
+    &__item {
+        padding: 70px 110px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        & > img {
+            border-radius: 50%;
+        }
+    }
+
+    &__icon-box {
+        width: 150px;
+        padding: 45px 43px 44px 44px;
+        border: 2px solid $third-color;
+    }
+    &__icon {
+        min-width: 64px;
+        height: 64px;
+        background-size: cover;
+    }
+
+    &__text-box {
+        padding-left: 70px;
+    }
+
+    &__desc {
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        color: $text-color;
+    }
+    &__author {
+        padding-top: 15px;
+        font-family: $third-font;
+        font-weight: 400;
+        font-size: 2.4rem;
+    }
+    &__line {
+        display: inline-block;
+        width: 60px;
+        border-bottom: 4px solid $primary-color;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    &__prev {
+        left: 55px - 15px;
+    }
+
+    &__next {
+        right: 55px - 15px;
+    }
+
+    &__next-icon,
+    &__prev-icon {
+        width: 30px;
+        font-size: 3rem;
+        color: #d0d0d0;
+        &--active {
+            transform: rotateX(160deg);
+        }
+    }
+}

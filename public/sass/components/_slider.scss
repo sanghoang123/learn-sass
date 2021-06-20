@@ -1,0 +1,28 @@
+.slider {
+    padding-top: 160px;
+    &__item {
+        height: 70px;
+        line-height: 70px;
+        border-top: 4px solid $white-color;
+        &--active {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0 - 4px;
+                left: 0;
+                width: 70px;
+                border-top: 4px solid $primary-color;
+            }
+        }
+    }
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $white-color;
+        span {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+}

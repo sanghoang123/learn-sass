@@ -1,0 +1,26 @@
+.feauture {
+    height: 850px;
+    background-image: linear-gradient(to bottom, rgba($gray-light-color, 0.8), rgba($gray-light-color, 0.8)),
+        url("../images/img-feature-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    &__img-box {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    &__img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        &--2 {
+            position: absolute;
+            top: 34%;
+            right: -34%;
+        }
+    }
+}

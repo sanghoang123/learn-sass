@@ -1,0 +1,63 @@
+.photography {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    margin-top: 10px;
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
+    &--no-margin {
+        margin-top: 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__img {
+        width: 28px;
+        height: 28px;
+    }
+    &__arrow {
+        margin-left: auto;
+    }
+
+    &__icon {
+        width: 22px;
+        font-size: 2rem;
+        color: #d0d0d0;
+        &--active {
+            transform: rotateX(160deg);
+        }
+    }
+
+    &__desc {
+        padding: 20px;
+        border-bottom: 2px solid $border-color;
+        & p {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: $text-color;
+            line-height: 2.4rem;
+            height: 134px;
+            padding-right: 20px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                display: block;
+                width: 8px;
+                background-color: $border-color;
+                padding-right: 20px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: $third-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.blog {
+    padding-bottom: 80px;
+    &__item {
+        padding-bottom: 60px;
+    }
+    &__img-box {
+        width: 380px;
+        height: 240px;
+        position: relative;
+    }
+
+    &__date {
+        position: absolute;
+        background-color: $third-color;
+        width: 60px;
+        height: 70px;
+        padding: 15px 0;
+        left: -10px;
+        bottom: 10px;
+        text-align: center;
+    }
+
+    &__day {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $white-color;
+    }
+
+    &__month {
+        font-family: $secondary-font;
+        color: $white-color;
+        font-weight: 400;
+    }
+
+    &__heading {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $black-color;
+        padding-top: 17px;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: $secondary-font;
+        line-height: 2.4rem;
+        padding: 20px 0;
+        color: $text-color;
+        border-bottom: 1px solid $border-color;
+    }
+
+    &__user-box {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $text-color;
+        & > i {
+            font-size: 2rem;
+            color: $third-color;
+            padding-right: 7px;
+        }
+        &:nth-child(2) {
+            padding-left: 19px;
+        }
+    }
+}

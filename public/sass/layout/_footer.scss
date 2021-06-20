@@ -1,0 +1,126 @@
+.footer {
+    padding-top: 70px;
+    &__item {
+        padding-bottom: 70px;
+    }
+    &__logo {
+        font-size: 4.6rem;
+        font-weight: 700;
+        color: $gray-dark-color;
+    }
+    &__desc {
+        padding: 43px 0 34px;
+        color: #b4b4b4;
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+    &__turn {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $black-color;
+        padding-bottom: 19px;
+        border-bottom: 1px solid $border-color;
+        & span {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+    &__follewer {
+        padding-top: 16px;
+        display: flex;
+        align-items: center;
+    }
+    &__label {
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-style: italic;
+        color: $text-color;
+    }
+    &__icon {
+        padding-left: 20px;
+        & i {
+            font-size: 2rem;
+            color: $third-color;
+            padding: 0 5px;
+        }
+    }
+
+    &__subs {
+        padding-top: 38px;
+        display: flex;
+        align-items: center;
+        & input {
+            // margin-right: -2px;
+            width: 230px;
+            height: 42px;
+            padding-left: 25px;
+            border: 1px solid $border-color;
+            outline: none;
+            font-size: 1.5rem;
+            font-family: $secondary-font;
+            line-height: 2.4rem;
+            color: $text-color;
+        }
+    }
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $black-color;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        line-height: 2.4rem;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        padding-bottom: 31px;
+        & img {
+            width: 120px;
+            height: 82px;
+        }
+    }
+    &__text {
+        padding-left: 20px;
+    }
+    &__name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+    }
+    &__date {
+        padding-top: 12px;
+        font-size: 1.3rem;
+        color: $text-color;
+        line-height: 2.4rem;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 88px 88px 88px;
+        grid-gap: 2px;
+    }
+    &__more {
+        padding-top: 20px;
+        font-family: $secondary-font;
+        font-style: italic;
+        font-weight: 400;
+        color: $text-color;
+        font-size: 1.3rem;
+    }
+    &__copyright {
+        text-align: center;
+        display: block;
+        border-top: 1px solid $border-color;
+        padding: 24px 0 22px;
+        & p {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $black-color;
+            & strong {
+                color: $primary-color;
+            }
+        }
+    }
+}

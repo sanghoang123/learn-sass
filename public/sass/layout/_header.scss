@@ -1,0 +1,50 @@
+.header {
+    min-height: 100rem;
+    background-image: linear-gradient(to bottom, rgba($primary-color, 0.8), rgba($secondary-color, 0.8)),
+        url("../images/header-img-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    &__nav {
+        display: flex;
+        height: 64px;
+        align-items: center;
+    }
+    &__logo {
+        color: $white-color;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    &__list {
+        margin-left: auto;
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        padding: 0 26px;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__link,
+    &__cart,
+    &__search {
+        padding: 15px 0;
+    }
+
+    &__link {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $white-color;
+        &--active {
+            border-bottom: 1px solid $yellow-light-color;
+            color: $yellow-light-color;
+        }
+    }
+}

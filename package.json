@@ -1,0 +1,15 @@
+{
+  "name": "using-html-css-js-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodesass": "node-sass -w ./public/sass/main.scss ./public/css/styles.css"
+  },
+  "author": "blue",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

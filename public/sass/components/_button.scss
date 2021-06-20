@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    width: 162px;
+    height: 42px;
+    line-height: 1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    color: $white-color;
+    border: 3px solid $white-color;
+    &--green-light {
+        background-color: $third-color;
+        border: none;
+    }
+}
